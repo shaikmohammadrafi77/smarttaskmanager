@@ -1,0 +1,72 @@
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #f9fafb;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.2s ease;
+}
+
+.open {
+  width: 260px;
+}
+
+.closed {
+  width: 72px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: inherit;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.closed .label {
+  display: none;
+}
+
+.active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(139, 92, 246, 0.8));
+}
+
